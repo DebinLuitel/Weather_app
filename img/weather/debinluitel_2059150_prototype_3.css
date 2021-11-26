@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 300vh;
+    justify-content: center;
+    align-content: center;
+    font-family:'Arial';
+    color: white
+    
+}
+.location,
+.temperature {
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+    font-size:20px;
+}
+.degree-section{
+ align-items: center;
+ cursor: pointer;
+}
+.degree-section span {
+    margin: 10px;
+    font-size: 30px;
+}
+.degree-section h2 {
+    font-size: 40px;
+}
+section{
+  width:500px;
+   margin: auto;
+  position: relative;
+  height:700px;
+  top: 100px;
+
+}
+.minimum_temperature {
+    position: relative;
+    top: 200px;
+    font-size: 20px;
+    text-align:center;
+    color: black;
+    font-weight: 600;
+    
+    
+      
+}
+.maximum_temperature {
+    position: relative;
+    top: 190px;
+    font-size: 20px;
+    text-align:center;
+    color: black;
+    font-weight: 600;
+    
+}
+.humidity {
+    position: absolute;
+
+    font-size: 20px;
+    text-align:center;
+    color: black;
+    font-weight: 600;
+}
+.pressure {
+    position: absolute;
+    font-size: 20px;
+    bottom: 20px;
+    text-align:center;
+    color: black;
+    font-weight: 600;
+    
+}
+.sunrise {
+    font-size: 20px;
+    text-align:center;
+    color: black;
+    font-weight: 600;
+    
+   
+}
+.sunset {
+    font-size: 20px;
+    text-align:center;
+    color: black;
+    font-weight: 600;
+
+    
+  
+}
+section:before{
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    height: calc(40% + 4px);
+    width: calc(100% + 4px);
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0;
+    filter: blur(5px);
+    background-size: 400%;
+    transition: opacity .3s ease-in-out;
+    animation: animate 20s linear infinite;
+  }
+  section:hover:before{
+    opacity: 1;
+  }
+  section:hover:active{
+    background: none;
+  }
+  section:hover:active:before{
+    filter: blur(2px);
+  }
+  @keyframes animate {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
+  Box {
+    top:10%;
+    left:10%;
+    right:10px;
+    bottom:10%;
+    border: solid 1px;
+    position: absolute;
+
+}
+.minibox {
+    box-shadow: 0.1px 2px 8px 10px greenyellow;
+                    
+             
+
+    background-color: #52ACFF;
+    background-color: #74EBD5;
+background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+
+
+        ;
+        margin:2% 2% 2% 2%;
+    position: relative;
+    height: 225px;
+    border-radius: 10px;
+
+}
+.location-timezone {
+    text-align: center;
+    font-weight: 5000;
+    font-weight: 10000;
+    color: black;
+    
+}
+.temperature-degree{
+    position: relative;
+    top:100px;
+    left: 5px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 5000;
+    font-weight: 10000;
+    color:black;
+    font-weight: 1000;
+}
+.temperature,.pressure,.humidity,.sunrise,.sunset {
+    position: relative;
+    bottom: 100px;
+
+}
+.sunrise {
+    right: 145px;
+}
+.sunset {
+    left: 145px;
+    bottom:120px;
+}
+#video_wrapper
+{
+ margin:0px;
+ padding:0px;
+}
+#video_wrapper video
+{
+ position: fixed;
+ top: 50%; left: 50%;
+ z-index: 1;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ transform: translate(-50%, -50%);
+}
+#wrapper
+{
+ position:relative;
+ text-align:center;
+ margin:0 auto;
+ padding:0px;
+ width:995px;
+ z-index:2;
+}
+#data {
+ left:100px;
+ position: relative;
+
+}
+.feels_like {
+    position: absolute;
+    left:350px;
+    bottom: 1px;
+    color: black;
+}
+.deg {
+    position: relative;
+    right: 345px;
+    bottom: 110px;
+
+}
+.description {
+    position: relative;
+    right: 175px;
+    bottom: 129px;
+    color: black;
+}
+.icons {
+    position: absolute;
+    top:80px;
+    right:80%;
+
+}
+.deg {
+    position: absolute;
+    bottom: 1px;
+    color: black;
+}
+

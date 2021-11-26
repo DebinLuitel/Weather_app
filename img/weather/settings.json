@@ -1,0 +1,6 @@
+{
+    "workbench.colorTheme": "SynthWave '84",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "synthwave84.disableglow":false
+}
